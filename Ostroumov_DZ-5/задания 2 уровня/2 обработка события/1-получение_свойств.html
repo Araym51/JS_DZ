@@ -17,4 +17,11 @@
     свойство className), текст на кнопке.
     -->
 </body>
+    <script>
+        "use strict";
+        let button = document.querySelectorAll('button');
+        button.addEventListener('click', function(event){
+            console.log(event.target.id, event.target.className, event.target.innerText);
+        });
+    </script>
 </html>
